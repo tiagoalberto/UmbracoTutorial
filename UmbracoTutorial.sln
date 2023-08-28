@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoTutorial", "UmbracoTutorial\UmbracoTutorial.csproj", "{DA640847-5D12-4A1A-880F-21C1D26D05AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoTutorial.Core", "UmbracoTutorial.Core\UmbracoTutorial.Core.csproj", "{A9B4AFC4-90E3-493C-B34D-AA7ADD2B05E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{DA640847-5D12-4A1A-880F-21C1D26D05AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA640847-5D12-4A1A-880F-21C1D26D05AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA640847-5D12-4A1A-880F-21C1D26D05AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9B4AFC4-90E3-493C-B34D-AA7ADD2B05E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9B4AFC4-90E3-493C-B34D-AA7ADD2B05E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9B4AFC4-90E3-493C-B34D-AA7ADD2B05E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9B4AFC4-90E3-493C-B34D-AA7ADD2B05E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

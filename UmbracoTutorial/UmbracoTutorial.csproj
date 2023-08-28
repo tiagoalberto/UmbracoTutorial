@@ -17,6 +17,33 @@
     </ItemGroup>
 
 
+
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\UmbracoTutorial.Core\UmbracoTutorial.Core.csproj" />
+    </ItemGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <PropertyGroup>
         <!-- Razor files are needed for the backoffice to work correctly -->
         <CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
