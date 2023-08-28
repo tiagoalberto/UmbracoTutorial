@@ -1,0 +1,7 @@
+﻿@inherits UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>
+@{
+    var content = (ProductListing)Model.Content;
+    var settings = (ProductListingSettings)Model.Settings;
+}
+
+@await Component.InvokeAsync("ProductListing", settings.NumberOfProducts)

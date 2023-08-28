@@ -88,6 +88,34 @@
       <Content Include="App_Plugins\BlockListElements\RichText\RichText.html" />
     </ItemGroup>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Components\ProductListing\Default.cshtml" />
+    </ItemGroup>
+
     <PropertyGroup>
         <!-- Razor files are needed for the backoffice to work correctly -->
         <CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>

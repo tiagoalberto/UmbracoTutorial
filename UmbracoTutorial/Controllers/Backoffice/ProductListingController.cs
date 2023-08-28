@@ -1,44 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Umbraco.Cms.Core.Web;
 using Umbraco.Cms.Web.BackOffice.Controllers;
+using UmbracoTutorial.Core;
 using UmbracoTutorial.Core.UmbracoModels;
+using UmbracoTutorial.Models.Records;
 
 namespace UmbracoTutorial.Controllers.Backoffice;
 
 // /umbraco/backoffice/api/ProductListing/GetProducts?number=0
 public class ProductListingController:UmbracoAuthorizedApiController
 {
-    private readonly IUmbracoContextFactory _umbracoContextFactory;
+    private readonly IProductService _productService;
 
-    public ProductListingController(IUmbracoContextFactory umbracoContextFactory)
+    public ProductListingController(IProductService productService)
     {
-        _umbracoContextFactory = umbracoContextFactory;
+        _productService = productService;
     }
 
-    private record ProductResponse(int id, string name, string imageUrl);
-    
     public IActionResult GetProducts(int number)
     {
-        var final = new List<ProductResponse>();
-
-        using var cref = _umbracoContextFactory.EnsureUmbracoContext();
-
-        var contentCache = cref.UmbracoContext.Content;
-
-        var products = contentCache
-            ?.GetAtRoot()
-            ?.FirstOrDefault(x => x.ContentType.Alias == Home.ModelTypeAlias)
-            ?.Descendant<Products>()
-            ?.Children<Product>()
-            ?.Take(number);
-
-        if (products is not null && products.Any())
-        {
-            final = products.Select(x =>
-                    new ProductResponse(x.Id, x?.ProductName ?? x.Name, x?.Photos?.Url() ?? "#"))
-                .ToList();
-        }
-
-        return Ok(final);
+        return Ok(_productService.GetUmbracoProducts(number));
     }
 }

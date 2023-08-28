@@ -1,0 +1,9 @@
+﻿@inherits UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>
+@{
+    var content = (UmbBlockGridDemoRichTextBlock)Model.Content;
+    var settings = (RichTextSettings)Model.Settings;
+}
+
+<div style="background-color: #@settings.BackgroundColor">
+    @content.RichText
+</div>
