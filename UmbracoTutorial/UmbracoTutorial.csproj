@@ -52,6 +52,37 @@
       <Folder Include="umbraco\" />
     </ItemGroup>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ItemGroup>
+      <Content Include="App_Plugins\BlockListElements\Image\image.controller.js" />
+      <Content Include="App_Plugins\BlockListElements\Image\Image.html" />
+      <Content Include="App_Plugins\BlockListElements\package.manifest" />
+      <Content Include="App_Plugins\BlockListElements\RichText\RichText.html" />
+    </ItemGroup>
+
     <PropertyGroup>
         <!-- Razor files are needed for the backoffice to work correctly -->
         <CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
