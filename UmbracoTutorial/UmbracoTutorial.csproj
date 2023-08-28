@@ -80,6 +80,10 @@
       <Content Include="App_Plugins\BlockListElements\Image\image.controller.js" />
       <Content Include="App_Plugins\BlockListElements\Image\Image.html" />
       <Content Include="App_Plugins\BlockListElements\package.manifest" />
+      <Content Include="App_Plugins\BlockListElements\ProductListing\productlisting.controller.js" />
+      <Content Include="App_Plugins\BlockListElements\ProductListing\productlisting.html" />
+      <Content Include="App_Plugins\BlockListElements\ProductListing\productlisting.resource.js" />
+      <Content Include="App_Plugins\BlockListElements\ProductListing\productlisting.service.js" />
       <Content Include="App_Plugins\BlockListElements\RichText\richtext.controller.js" />
       <Content Include="App_Plugins\BlockListElements\RichText\RichText.html" />
     </ItemGroup>
