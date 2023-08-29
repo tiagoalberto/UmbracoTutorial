@@ -2,6 +2,8 @@ using System.Security.Cryptography.X509Certificates;
 using Microsoft.EntityFrameworkCore;
 using OpenIddict.Abstractions;
 using UmbracoTutorial.Core.Repository;
+using UmbracoTutorial.Core.Services;
+using UmbracoTutorial.Extensions;
 
 namespace UmbracoTutorial
 {
@@ -39,8 +41,11 @@ namespace UmbracoTutorial
                 .AddWebsite()
                 .AddDeliveryApi()
                 .AddComposers()
+                .AddContactRequestTable()
                 .Build();
 
+            services.AddScoped<IContactRequestService, ContactRequestService>();
+            
             services.AddDbContext<DbContext>(options =>
             {
                 options.UseInMemoryDatabase(nameof(DbContext));
