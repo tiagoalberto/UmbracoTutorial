@@ -82,6 +82,13 @@ namespace UmbracoTutorial.Core.UmbracoModels
 		public virtual string PageTitle => this.Value<string>(_publishedValueFallback, "pageTitle");
 
 		///<summary>
+		/// Publication Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
+		[ImplementPropertyType("publicationDate")]
+		public virtual global::System.DateTime PublicationDate => this.Value<global::System.DateTime>(_publishedValueFallback, "publicationDate");
+
+		///<summary>
 		/// Keywords: Keywords that describe the content of the page. This is considered optional since most modern search engines don't use this anymore
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.1.2+9230b25")]
