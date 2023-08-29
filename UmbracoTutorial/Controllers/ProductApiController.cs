@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http.HttpResults;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using OpenIddict.Validation.AspNetCore;
 using Umbraco.Cms.Core.Mapping;
 using Umbraco.Cms.Web.Common.Controllers;
 using UmbracoTutorial.Core.Models.Records;
@@ -11,6 +13,7 @@ namespace UmbracoTutorial.Controllers;
 
 // /umbraco/api/productapi/{action} => Default route
 [Route("api/products")]
+[Authorize(AuthenticationSchemes = OpenIddictValidationAspNetCoreDefaults.AuthenticationScheme)]
 public class ProductApiController:UmbracoApiController
 {
     private readonly IProductRepository _productRepository;

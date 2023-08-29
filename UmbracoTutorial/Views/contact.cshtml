@@ -18,7 +18,7 @@
                 <h2>@Model.ContactFormHeader</h2>
                 @Model.ContactIntro
                 @{
-                   await Html.RenderPartialAsync("Partials/ContactForm", new ContactFormViewModel());
+                   await Html.RenderPartialAsync("~/Views/Partials/ContactForm.cshtml", new ContactFormViewModel());
                 }
             </div>
 

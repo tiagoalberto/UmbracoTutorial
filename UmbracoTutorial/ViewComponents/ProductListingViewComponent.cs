@@ -20,6 +20,6 @@ public class ProductListingViewComponent:ViewComponent
             Products = _productService.GetUmbracoProducts(number)
         };
 
-        return View(vm);
+        return View("~/Views/Partials/Components/ProductListing/Default.cshtml",vm);
     }
 }
