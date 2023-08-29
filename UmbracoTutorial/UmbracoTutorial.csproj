@@ -94,6 +94,9 @@
       <Content Include="App_Plugins\ContactRequests\contactrequests.resource.js" />
       <Content Include="App_Plugins\ContactRequests\contactrequests.service.js" />
       <Content Include="App_Plugins\ContactRequests\package.manifest" />
+      <Content Include="App_Plugins\GitHubUser\githubuser.controller.js" />
+      <Content Include="App_Plugins\GitHubUser\githubuser.html" />
+      <Content Include="App_Plugins\GitHubUser\package.manifest" />
       <Content Include="wwwroot\media\0aslars0\7377957524_347859faac_b.jpg" />
       <Content Include="wwwroot\media\1k2bvtyp\jan-skovgaard.jpg" />
       <Content Include="wwwroot\media\5guogia1\7371127652_e01b6ab56f_b.jpg" />
