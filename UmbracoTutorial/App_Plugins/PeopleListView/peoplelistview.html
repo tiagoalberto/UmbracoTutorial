@@ -1,0 +1,49 @@
+<style>
+    .github-user--container {
+        padding: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+        -moz-box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+        background-color: #fff;
+        text-align: center;
+        margin-right: 10px;
+        border: 2px solid #fff;
+        width: 220px;
+    }
+
+    .github-user--container img {
+        margin: auto;
+        height: 170px;
+        width: 170px;
+        padding: 3px;
+        background: #f2f2f2;
+        border: none;
+    }
+
+    .github-user--container:has(img.selected) {
+        border: 2px solid #3544b1;
+        box-shadow: 0 0 4px 0 #1d2663, inset 0 0 2px 0 #1d2663;
+    }
+
+    .github-user--container img.selected {
+        background: #f2f2f2;
+        border-color: transparent;
+    }
+    
+</style>
+
+<div ng-controller="peopleListViewController">
+    <ul class="thumbnails">
+        <li ng-repeat="item in items">
+            <div class="github-user--container" ng-click="toggleItem(item)">
+
+                <img ng-src="https://github.com/{{item.githubUser.githubUserName || 'github'}}.png?size=200" 
+                     class="img-circle" ng-class="{'selected':item.selected}"/>
+
+                <h5><a href="javascript:;" ng-click="gotoitem(item)">{{item.name}}</a></h5>
+                {{item.githubUser.githubUserName}}
+            </div>
+        </li>
+    </ul>
+</div>
