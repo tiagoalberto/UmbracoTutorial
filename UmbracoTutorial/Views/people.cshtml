@@ -1,4 +1,5 @@
 ﻿@using Umbraco.Extensions
+@using UmbracoTutorial.Core.Models
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<People>
 @{
     Layout = "master.cshtml";
@@ -32,7 +33,8 @@
         <div class="employee-grid">
             @foreach (Person person in Model.Children<Person>())
             {
-
+                var githubProfile = person.Value<GithubUserDTO>("githubUser");
+                
                 <div class="employee-grid__item">
                     <div class="employee-grid__item__image" style="background-image: url('@person.Photo?.Url()')"></div>
                     <div class="employee-grid__item__details">
@@ -47,6 +49,13 @@
                             @{ SocialLink(person.LinkedInUsername, "LinkedIn"); }
                             @{ SocialLink(person.InstagramUsername, "Instagram"); }
                         </div>
+                        @if (githubProfile != null)
+                        {
+                            <div class="github-information">
+                                <div><b>Username: </b>@(githubProfile?.UserName ?? "")</div>
+                                <div><b>Programming Language: </b>@(githubProfile?.PreferredProgrammingLanguage ?? "")</div>
+                            </div>
+                        }
                     </div>
                 </div>
             }
