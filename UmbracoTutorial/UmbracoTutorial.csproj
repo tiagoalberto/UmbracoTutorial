@@ -86,6 +86,28 @@
       <Content Include="App_Plugins\BlockListElements\ProductListing\productlisting.service.js" />
       <Content Include="App_Plugins\BlockListElements\RichText\richtext.controller.js" />
       <Content Include="App_Plugins\BlockListElements\RichText\RichText.html" />
+      <Content Include="wwwroot\media\0aslars0\7377957524_347859faac_b.jpg" />
+      <Content Include="wwwroot\media\1k2bvtyp\jan-skovgaard.jpg" />
+      <Content Include="wwwroot\media\5guogia1\7371127652_e01b6ab56f_b.jpg" />
+      <Content Include="wwwroot\media\abchlerf\poornima_nayar.jpg" />
+      <Content Include="wwwroot\media\aeifsm41\starfieldlogo.png" />
+      <Content Include="wwwroot\media\amoot1xi\matt-brailsford.jpg" />
+      <Content Include="wwwroot\media\bm5hn4xl\lee-kelleher.jpg" />
+      <Content Include="wwwroot\media\buumkg0y\14272036539_469ca21d5c_h.jpg" />
+      <Content Include="wwwroot\media\cqwfkfy3\7373036290_5e8420bf36_b.jpg" />
+      <Content Include="wwwroot\media\doxkuvnu\ravi-motha.jpg" />
+      <Content Include="wwwroot\media\dsypff0x\laura_weatherhead.jpg" />
+      <Content Include="wwwroot\media\fzobwfow\janae_cram.jpg" />
+      <Content Include="wwwroot\media\hrybwhjk\7373036208_30257976a0_b.jpg" />
+      <Content Include="wwwroot\media\inefcvn3\4730684907_8a7f8759cb_b.jpg" />
+      <Content Include="wwwroot\media\jdnh1nyd\5852022091_87c5d045ab_b.jpg" />
+      <Content Include="wwwroot\media\m5xlws44\busra_sengul.jpg" />
+      <Content Include="wwwroot\media\nhjhj1wp\erica_quessenberry.jpg" />
+      <Content Include="wwwroot\media\niocmodn\starfieldlogo.png" />
+      <Content Include="wwwroot\media\phdj3qhd\5852022211_9028df67c0_b.jpg" />
+      <Content Include="wwwroot\media\vvlnw31z\emmanuel_tissera.jpg" />
+      <Content Include="wwwroot\media\vwojnqfl\jeavon-leopold.jpg" />
+      <Content Include="wwwroot\media\zt1cuzq0\16403439029_f500be349b_o.jpg" />
     </ItemGroup>
 
 
