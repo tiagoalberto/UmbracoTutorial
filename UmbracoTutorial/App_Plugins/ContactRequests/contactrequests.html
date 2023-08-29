@@ -1,0 +1,24 @@
+<div ng-controller="contactRequestsController as vm">
+    <umb-box>
+        <umb-box-header title="Amount of contact requests from contact form"></umb-box-header>
+        <umb-box-content>
+            <p>You have received <b>{{vm.contactRequestsNumber}}</b> contact requests.</p>
+        </umb-box-content>
+        <umb-box-content>
+            <uui-table aria-label="contact table">
+                <uui-table-head>
+                    <uui-table-head-cell>Id</uui-table-head-cell>
+                    <uui-table-head-cell>Name</uui-table-head-cell>
+                    <uui-table-head-cell>Email</uui-table-head-cell>
+                    <uui-table-head-cell>Message</uui-table-head-cell>
+                </uui-table-head>
+                <uui-table-row ng-repeat="r in vm.contactRequests">
+                    <uui-table-head-cell>{{r.Id}}</uui-table-head-cell>
+                    <uui-table-head-cell>{{r.Name}}</uui-table-head-cell>
+                    <uui-table-head-cell>{{r.Email}}</uui-table-head-cell>
+                    <uui-table-head-cell>{{r.Message}}</uui-table-head-cell>
+                </uui-table-row>
+            </uui-table>
+        </umb-box-content>
+    </umb-box>
+</div>

@@ -48,6 +48,7 @@ namespace UmbracoTutorial
                 .AddNotificationHandler<ContentPublishedNotification, ContentPublishedNotificationHandler>()
                 .AddNotificationHandler<SendingContentNotification, SendingContentNotificationHandler>()
                 .AddNotificationHandler<MenuRenderingNotification, MenuRenderingNotificationHandler>()
+                .AddContactRequestMappings()
                 .Build();
 
             services.AddScoped<IContactRequestService, ContactRequestService>();

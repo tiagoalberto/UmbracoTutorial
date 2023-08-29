@@ -89,6 +89,11 @@
       <Content Include="App_Plugins\BlockListElements\ProductListing\productlisting.service.js" />
       <Content Include="App_Plugins\BlockListElements\RichText\richtext.controller.js" />
       <Content Include="App_Plugins\BlockListElements\RichText\RichText.html" />
+      <Content Include="App_Plugins\ContactRequests\contactrequests.controller.js" />
+      <Content Include="App_Plugins\ContactRequests\contactrequests.html" />
+      <Content Include="App_Plugins\ContactRequests\contactrequests.resource.js" />
+      <Content Include="App_Plugins\ContactRequests\contactrequests.service.js" />
+      <Content Include="App_Plugins\ContactRequests\package.manifest" />
       <Content Include="wwwroot\media\0aslars0\7377957524_347859faac_b.jpg" />
       <Content Include="wwwroot\media\1k2bvtyp\jan-skovgaard.jpg" />
       <Content Include="wwwroot\media\5guogia1\7371127652_e01b6ab56f_b.jpg" />
