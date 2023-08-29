@@ -1,10 +1,9 @@
 ﻿using Umbraco.Cms.Core.Web;
 using Umbraco.Extensions;
 using UmbracoTutorial.Core.Models;
+using UmbracoTutorial.Core.Models.Records;
 using UmbracoTutorial.Core.UmbracoModels;
-using UmbracoTutorial.Models.Records;
-
-namespace UmbracoTutorial.Core;
+namespace UmbracoTutorial.Core.Services;
 
 public class ProductService:IProductService
 {

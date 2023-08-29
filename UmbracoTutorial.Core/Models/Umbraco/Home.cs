@@ -2,7 +2,7 @@
 
 public partial class Home
 {
-    public string ShorHeroDescription
+    public string ShortHeroDescription
     {
         get
         {

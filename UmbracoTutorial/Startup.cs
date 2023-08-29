@@ -1,3 +1,5 @@
+using UmbracoTutorial.Core.Repository;
+
 namespace UmbracoTutorial
 {
     public class Startup

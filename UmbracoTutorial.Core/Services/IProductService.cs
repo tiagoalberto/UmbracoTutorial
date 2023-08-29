@@ -1,7 +1,7 @@
 ﻿using UmbracoTutorial.Core.Models;
-using UmbracoTutorial.Models.Records;
+using UmbracoTutorial.Core.Models.Records;
 
-namespace UmbracoTutorial.Core;
+namespace UmbracoTutorial.Core.Services;
 
 public interface IProductService
 {

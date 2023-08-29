@@ -9,9 +9,12 @@
 
     <ItemGroup>
       <PackageReference Include="Bergmania.OpenStreetMap.Core" Version="5.3.1" />
+      <PackageReference Include="SixLabors.ImageSharp" Version="3.0.1" />
       <PackageReference Include="Umbraco.Cms.Core" Version="12.1.2" />
       <PackageReference Include="Umbraco.Cms.Infrastructure" Version="12.1.2" />
     </ItemGroup>
+
+
 
 
 

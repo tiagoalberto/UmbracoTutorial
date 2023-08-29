@@ -1,6 +1,9 @@
 ﻿using Umbraco.Cms.Core.Composing;
+using Umbraco.Cms.Core.Mapping;
 using Umbraco.Cms.Web.Common.ApplicationBuilder;
-using UmbracoTutorial.Core;
+using UmbracoTutorial.Core.Repository;
+using UmbracoTutorial.Core.Services;
+using UmbracoTutorial.Mappings;
 
 namespace UmbracoTutorial.Composers;
 
@@ -33,5 +36,10 @@ public class ProductComposer:IComposer
                 })
             );
         });
+        
+        builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+        builder.WithCollectionBuilder<MapDefinitionCollectionBuilder>()
+            .Add<ProductMapping>();
     }
 }

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.ViewEngines;
 using Umbraco.Cms.Core.Models.PublishedContent;
 using Umbraco.Cms.Core.Web;
 using Umbraco.Cms.Web.Common.Controllers;
-using UmbracoTutorial.Core;
+using UmbracoTutorial.Core.Services;
 using UmbracoTutorial.ViewModels;
 
 namespace UmbracoTutorial.Controllers;

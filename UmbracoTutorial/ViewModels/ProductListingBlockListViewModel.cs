@@ -1,4 +1,4 @@
-﻿using UmbracoTutorial.Models.Records;
+﻿using UmbracoTutorial.Core.Models.Records;
 
 namespace UmbracoTutorial.ViewModels;
 

@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Umbraco.Cms.Core.Web;
 using Umbraco.Cms.Web.BackOffice.Controllers;
-using UmbracoTutorial.Core;
-using UmbracoTutorial.Core.UmbracoModels;
-using UmbracoTutorial.Models.Records;
+using UmbracoTutorial.Core.Services;
 
 namespace UmbracoTutorial.Controllers.Backoffice;
 
